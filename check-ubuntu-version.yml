@@ -6,4 +6,4 @@
   tasks:
     - name: Check ubuntu version
       debug:
-        msg: "{{ ansible_distribution }} + {{ansible_distribution_version }}"
+        msg: "{{ ansible_distribution }} {{ansible_distribution_version }}"
