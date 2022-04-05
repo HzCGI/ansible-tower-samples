@@ -1,8 +1,7 @@
 ---
 
-- hosts: all
+- hosts: 10.4.0.20
   become: yes
-  become_user: root
   gather_facts: yes
   tasks:
   - name: Check ubuntu verison
