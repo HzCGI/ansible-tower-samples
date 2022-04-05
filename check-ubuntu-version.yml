@@ -1,12 +1,9 @@
 ---
 
-- hosts: all
+- hosts: 10.4.0.20
   become: yes
+  gather_facts: yes
   tasks:
   - name: Check ubuntu verison
-    shell: |
-      cat: /etc/system-release
-    register: os_name
-    ignore_errors: yes
   - debug:
-      msg: "{{os_name.stdout}}"
+      msg: "{{ ansible_distribution }}"
