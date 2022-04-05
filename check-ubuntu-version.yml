@@ -4,6 +4,6 @@
   become: yes
   gather_facts: yes
   tasks:
-  - name: Check ubuntu verison
-  - debug:
-      msg: "{{ ansible_distribution }}"
+    - name: Check ubuntu version
+      debug:
+        msg: "{{ ansible_distribution }}"
