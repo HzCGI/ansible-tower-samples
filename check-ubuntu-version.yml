@@ -9,4 +9,4 @@
     register: os_name
     ignore_errors: yes
   - debug:
-    msg: "{{os_name.stdout}}"
+      msg: "{{os_name.stdout}}"
